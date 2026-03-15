@@ -89,7 +89,7 @@ export default function Layout() {
                 }`
               }
             >
-              <Icon className="w-4.5 h-4.5 flex-shrink-0 w-5 h-5" />
+              <Icon className="w-5 h-5 flex-shrink-0" />
               {label}
             </NavLink>
           ))}

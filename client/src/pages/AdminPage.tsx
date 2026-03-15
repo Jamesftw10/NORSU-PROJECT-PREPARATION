@@ -114,7 +114,7 @@ export default function AdminPage() {
         ].map(({ icon: Icon, label, value, color }) => (
           <div key={label} className="bg-white rounded-2xl p-5 border border-slate-100 shadow-sm">
             <div className={`w-9 h-9 rounded-xl flex items-center justify-center mb-3 ${color}`}>
-              <Icon className="w-4.5 h-4.5 w-5 h-5" />
+              <Icon className="w-5 h-5" />
             </div>
             <p className="text-2xl font-bold text-slate-800">{value.toLocaleString?.() ?? value}</p>
             <p className="text-sm text-slate-500">{label}</p>
