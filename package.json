@@ -1,0 +1,21 @@
+{
+  "name": "norsu-study-platform",
+  "version": "1.0.0",
+  "description": "NORSU AI-powered study platform for students",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=server\" \"npm run dev --workspace=client\"",
+    "build": "npm run build --workspace=client && npm run build --workspace=server",
+    "start": "npm run start --workspace=server"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "semver": "^7.7.4"
+  }
+}
